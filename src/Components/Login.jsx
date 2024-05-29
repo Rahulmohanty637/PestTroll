@@ -1,7 +1,7 @@
 import React from "react";
 import image from "../assets/loginimage.jpg";
 
-const LoginPage = () => {
+const Login = () => {
   return (
     <section className="bg-gray-50 min-h-screen flex items-center justify-center">
       <div className="bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl p-5">
@@ -49,4 +49,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Login;

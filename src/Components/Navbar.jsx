@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   let Links = [
@@ -37,12 +38,16 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-          <button className="btn bg-yellow-400 text-black md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static">
-            Log In
-          </button>
-          <button className="btn bg-yellow-400 text-black md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static">
-            Sign Up
-          </button>
+          <Link to="/login">
+            <button className="btn bg-yellow-400 text-black md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static">
+              Log In
+            </button>
+          </Link>
+          <Link to="/signup">
+            <button className="btn bg-yellow-400 text-black md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static">
+              Sign Up
+            </button>
+          </Link>
         </ul>
       </div>
     </div>

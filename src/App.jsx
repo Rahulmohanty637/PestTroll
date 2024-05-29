@@ -5,7 +5,7 @@ import Hero from "./Components/Hero";
 import LoginSignup from "./Components/Signup";
 import Navbar from "./Components/Navbar";
 import Testimonial from "./Components/Testimonials";
-import LoginPage from "./Components/LoginPage";
+import LoginPage from "./Components/Login";
 
 function App() {
 
