@@ -1,5 +1,6 @@
 import React from "react";
 import HeroPng from "../assets/leaf.webp";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -24,9 +25,11 @@ const Hero = () => {
                 </span>{" "}
               </h1>
               <div data-aos="fade-up" data-aos-delay="400">
+                <Link to="/uploadimage">
                 <button className="bg-yellow-400 border-2 border-primary hover:scale-105 duration-200 text-black font-bold py-2 px-4 rounded-full">
                   Get Started
                 </button>
+                </Link>
               </div>
             </div>
             {/* Image section */}
