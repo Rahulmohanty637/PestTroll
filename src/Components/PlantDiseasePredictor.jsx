@@ -96,18 +96,18 @@ const PlantDiseasePredictor = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white rounded-xl shadow-md space-y-4">
+    <div className="max-w-full mx-auto p-6 bg-white rounded-xl shadow-md space-y-4 mt-40 mb-60 border">
       <h2 className="text-xl font-bold">Plant Disease Predictor</h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4 flex gap-10 items-center justify-center">
         <input
           type="file"
           accept="image/*"
           onChange={handleFileChange}
-          className="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer focus:outline-none"
+          className="p-2 w-1/2 block text-sm text-gray-900 bg-gray-50 rounded-lg border border-green-800 cursor-pointer focus:outline-none"
         />
         <button
           type="submit"
-          className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           disabled={loading}
         >
           {loading ? "Uploading..." : "Upload and Predict"}
