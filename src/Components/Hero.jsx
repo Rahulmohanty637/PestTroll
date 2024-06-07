@@ -15,20 +15,29 @@ const Hero = () => {
                 data-aos-once="true"
                 className="text-5xl sm:text-6xl lg:text-7xl font-bold"
               >
-               AI-Powered Plant Health & {" "}
+                AI-Powered Plant Health &{" "}
                 <span
                   data-aos="zoom-out"
                   data-aos-delay="300"
                   class="bg-clip-text text-green-800 bg-gradient-to-b from-primary to-primary/90 font-cursive"
                 >
-                 Pest Management Tools
+                  Pest Management Tools
                 </span>{" "}
               </h1>
-              <div data-aos="fade-up" data-aos-delay="400">
-                <Link to="/uploadimage">
-                <button className="bg-yellow-400 border-2 border-primary hover:scale-105 duration-200 text-black font-bold py-2 px-4 rounded-full">
-                  Get Started
-                </button>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="400"
+                className="flex justify-start space-x-4"
+              >
+                <Link to="/diseasedetection">
+                  <button className="bg-yellow-400 border-2 border-primary hover:scale-105 duration-200 text-black font-bold py-2 px-4 rounded-full">
+                    Disease Detection
+                  </button>
+                </Link>
+                <Link to="/pesticideprediction">
+                  <button className="bg-yellow-400 border-2 border-primary hover:scale-105 duration-200 text-black font-bold py-2 px-4 rounded-full">
+                    Pesticide Prediction
+                  </button>
                 </Link>
               </div>
             </div>
@@ -48,9 +57,7 @@ const Hero = () => {
                 data-aos="fade-right"
                 data-aos-offset="0"
                 className="bg-gradient-to-r from-primary to-secondary p-3 rounded-xl absolute bottom-10 right-10"
-              >
-                <h1 className="text-white">Best Coffee</h1>
-              </div>
+              ></div>
             </div>
           </div>
         </div>

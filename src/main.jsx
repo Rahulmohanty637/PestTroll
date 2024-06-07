@@ -13,6 +13,8 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import PredictionPage from "./Pages/PredictionPage.jsx";
+import DiseaseDetection from "./Components/DiseaseDetection.jsx";
+import PesticidePrediction from "./Components/PesticidePrediction.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,7 +22,8 @@ const router = createBrowserRouter(
       <Route path="" element={<Home />} />
       <Route path="login" element={<LoginPage />} />
       <Route path="signup" element={<SignupPage />} />
-      <Route path="uploadimage" element={<PredictionPage/>} />
+      <Route path="diseasedetection" element={<DiseaseDetection/>} />
+      <Route path="pesticideprediction" element={<PesticidePrediction/>} />
     </Route>
   )
 );
